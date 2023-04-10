@@ -1,3 +1,3 @@
-const elem = document.querySelector('input');
+const element = document.querySelector("input");
 
-elem.addEventListener('input', handleInput);
+element.addEventListener("input", handleInput);
