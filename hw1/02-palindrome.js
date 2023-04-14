@@ -23,18 +23,18 @@ function isAlphabetsPresent(value) {
   return regExp.test(value);
 }
 
-function isPalindrome(value) {
-  const array = value.toString().split("");
+let isPalindrome = function checkIfValueIsPalindrome(value) {
+  const array = value.split("");
   let left = 0;
   let right = array.length - 1;
 
   while (left <= right) {
     if (array[left] === array[right]) {
-      left++;
-      right--;
+      left += 1;
+      right -= 1;
     } else {
       return false;
     }
   }
   return true;
-}
+};
