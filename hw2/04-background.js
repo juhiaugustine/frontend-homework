@@ -3,8 +3,8 @@ const timeInterval = 3000;
 const body = document.body;
 let identifier = null;
 
-let button = document.getElementsByClassName("btn")[0];
-let timeIntervalInput = document.getElementById("timeInput");
+const button = document.getElementsByClassName("btn")[0];
+const timeIntervalInput = document.getElementById("timeInput");
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
@@ -17,7 +17,7 @@ button.addEventListener("click", function (event) {
   } else {
     identifier = setInterval(
       setBackgroundColor,
-      timeIntervalInput.value.length == 0
+      timeIntervalInput.value.length === 0
         ? timeInterval
         : timeIntervalInput.value * 1000
     );

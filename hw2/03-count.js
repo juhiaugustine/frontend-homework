@@ -1,5 +1,5 @@
-const keywordsInput = document.querySelector("#keyword_input");
-const sentences = document.querySelector("#sentences");
+const keywordsInput = document.getElementById("keyword_input");
+const sentences = document.getElementById("sentences");
 
 const handleKeyDown = () => {
   const input = keywordsInput.value.trim();
