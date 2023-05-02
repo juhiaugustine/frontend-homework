@@ -17,3 +17,34 @@ h1 {
   border-radius: 0.8rem;
   background-color: var(--white);
 }
+
+#characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.character {
+  position: relative;
+  width: 200px;
+  height: 300px;
+
+  border-radius: 8px;
+}
+.character-name {
+  text-align: center;
+}
+.character-title {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.character-image {
+  max-height: 200px;
+  max-width: 200px;
+}
+.character:hover {
+  background-color: #00425c;
+  color: #ffffff;
+}
