@@ -13,7 +13,41 @@ h1 {
   text-align: center;
 }
 
-.donut-chart {
-  border-radius: 0.8rem;
-  background-color: var(--white);
+#characters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.character {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.character-name {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+.character-title {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+}
+.character-image {
+  width: 230px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+.character:hover {
+  background-color: #00425c;
+  color: #ffffff;
 }

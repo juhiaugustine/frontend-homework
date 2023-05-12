@@ -1,0 +1,10 @@
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.donut-chart {
+  display: flex;
+  max-height: 80vh;
+}
