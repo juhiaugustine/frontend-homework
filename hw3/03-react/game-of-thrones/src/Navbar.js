@@ -1,40 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Home from "./views/Home";
-import Search from "./views/Search";
-import Houses from "./views/Houses";
 
-function Navbar() {
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import "./App.css";
+
+function NavigationBar() {
   return (
-    <div>
-      <nav>
-        <ul className="Navbar">
-          <li>
-            <Link className="Navlink" to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="Navlink" to="/search">
-              Search
-            </Link>
-          </li>
-          <li>
-            <Link className="Navlink" to="/houses">
-              Houses
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/houses" element={<Houses />} />
-      </Routes>
-    </div>
+    <>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand as={Link} to="/">
+          Home
+        </Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link as={Link} to="/search">
+            Search
+          </Nav.Link>
+          <Nav.Link as={Link} to="/houses">
+            Houses
+          </Nav.Link>
+        </Nav>
+      </Navbar>
+    </>
   );
 }
 
-export default Navbar;
+export default NavigationBar;
